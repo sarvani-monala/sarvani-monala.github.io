@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .logo-image{
+        width: 100px;
+        height: 60px;
+        overflow: hidden;
+        margin-top: -10px;
+    }
+    .nav-link{
+      padding: 15px;
+      margin: auto;
+      font-size: 17px;
+      font-family: cursive;
+      color: black;
+    }
+    #container{
+      margin-top: 50px;
+      padding: 50px;
+      background-image: url("shop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: white;
+    }
+    .form-group input, label{
+      font-family: calibri;
+      font-size: 15px;
+      width: inherit;
+    }
+    label{
+      font-weight: bold;
+      color: black;
+    }
+    #container h4, p{
+      text-align: center;
+      font-family: calibri;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .required{
+      color: red;
+    }
+    #butype{
+      font-weight: normal;
+    }
+    #regbutton{
+      border: 3px solid black;
+      background-color: white;
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top container">
+        <a class="navbar-brand" href="#"><img src="sunshine fashions logo.png" class="logo-image" alt=""> Sunshine Fashions
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#loginsection">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featuressection">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="jumbotron container" id="container">
+        <h4>Vendor Registration Form</h4>
+        <p>Thank you for your interest in becoming a vendor for Sunshine Fashions.
+        In order to get associated with us, please fill out the below form</p>
+        <form role="form">
+          <div class="form-group">
+            <label for="vendorname">Your company's name<span class="required">*</span></label><br>
+            <input type="text" id="vendorname" class="form-control"><br>
+            <label for="">Business Type<span class="required">*</span></label><br>
+            <div>
+              <label class="checkbox-inline" id="butype">
+                <input type="radio" name="" value=""> Manufacturer
+              </label><br>
+              <label class="checkbox-inline" id="butype">
+                <input type="radio" name="" value=""> Distributor
+              </label><br>
+              <label class="checkbox-inline" id="butype">
+                <input type="radio" name="" value=""> Service Provider
+              </label><br>
+            </div>
+            <div>
+              <label for = "name">What kind of products / services does your company offer?<span class="required">*</span></label>
+              <textarea class = "form-control" rows = "3" cols="5"></textarea>
+            </div><br>
+            <label for="compweb">Company Website<span class="required">*</span></label><br>
+            <input type="text" name="" id="compweb" class="form-control"><br>
+            <label for="compaddress" class="form-group">Company Address</label><br>
+            <input type="text" name="" value="" id="compaddress" placeholder="Street Address" class="form-control">
+            <input type="text" name="" value="" id="compaddress" placeholder="Street Address Line 2" class="form-control">
+            <input type="text" name="" value="" id="compaddress" placeholder="City" class="form-control">
+            <input type="text" name="" value="" id="compaddress" placeholder="Region" class="form-control">
+            <input type="text" name="" value="" id="compaddress" placeholder="Postal / Zip Code" class="form-control">
+            <input type="text" name="" value="" id="compaddress" placeholder="Country" class="form-control"><br>
+            <label for="pername">Name of person representing the company<span class="required">*</span></label><br>
+            <input type="text" name="" value="" id="pername" placeholder="First" class="form-control">
+            <input type="text" name="" value="" id="pername" placeholder="Last" class="form-control"><br>
+            <label for="conemail">Company Email<span class="required">*</span></label><br>
+            <input type="email" name="" value="" id="pername" class="form-control"><br>
+            <label for="comphone">Company Phone<span class="required">*</span></label><br>
+            <input type="number" name="" value="" id="comphone" class="form-control"><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" name="" value="" class="form-control"><br>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> I agree to the terms and conditions and abide by the rules of the company
+              </label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-default" id="regbutton">Register</button>
+
+          </div>
+
+        </form>
+
+
+
+
+      </div>
+
+
+
+  </body>
+</html>
