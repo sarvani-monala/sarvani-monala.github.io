@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+  </head>
+  <body>
+    <form name="MyForm">
+      <table>
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td><input type="text" name="Name" id="name" pattern="^[a-zA-Z]+ [a-zA-Z]+$" required></td>
+        </tr>
+        <tr>
+          <td><label for="">Address: </label></td>
+          <td><input type="text" name="" placeholder="City" pattern="[A-Za-z]{1,}"value="" required>
+          <input type="text" name="" placeholder="State" pattern="[A-Za-z]{1,}" required>
+          <input type="text" name="" placeholder="ZipCode" pattern="[0-9]{6}" value="" required>
+        </td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number: </label></td>
+          <td><input id="phone" name="mobile-number" type="text" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email Address: </label></td>
+          <td><input id="email" name="Email" type="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="birthdate">Birth Date: </label></td>
+          <td><input id="birthdate" name="bdate" type="date" required></td>
+        </tr>
+        <tr>
+          <td><label for="textarea">Message: </label></td>
+          <td><textarea name="name" id="textarea" rows="5" cols="50" required></textarea></td>
+        </tr>
+        <tr>
+          <td>What is India's national bird?: </td>
+          <td><input type="text" name="Confirmation" id="confirm" value=""> </td>
+        </tr>
+      </table>
+      <input type="submit" name="" onclick="ValidateEmail(document.MyForm.Email); security(document.MyForm.Confirmation)">
+    </form>
+    <script src="jsvalidations.js"></script>
+
+
+  </body>
+</html>
